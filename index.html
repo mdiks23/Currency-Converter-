@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+  <div class="content">
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="converter-wrapper">
+            <div class="input-group">
+                <label>Amount</label>
+                <input type="number" id="amount" placeholder="Enter amount" min="0">
+            </div>
+            
+            <div class="currency-select">
+                <div class="input-group" style="flex:1">
+                    <label>From</label>
+                    <select id="from-currency"></select>
+                </div>
+                <button class="swap-btn" id="swap-btn">
+                    <i class="fas fa-exchange-alt"></i>
+                </button>
+                <div class="input-group" style="flex:1">
+                    <label>To</label>
+                    <select id="to-currency"></select>
+                </div>
+            </div>
+
+            <button class="convert-btn" id="convert-btn">Convert</button>
+            <div class="result" id="result"></div>
+        </div>
+    </div>
+    </div>
+<footer>
+  <center>
+  &copy; created by - Md. Imtiaz Khondokar Supto
+  </center>
+</footer>
+</body>
+</html>
