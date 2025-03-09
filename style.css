@@ -1,0 +1,136 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body{
+          
+                      background: linear-gradient(45deg, #937aff, #72daffe8);
+
+        }
+
+        .content {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 20px;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.5);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 100%;
+            max-width: 500px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 30px;
+            font-size: 2.2em;
+            font-family: cursive;
+            padding-bottom: 20px;
+            border-block-end: 2px dashed orange;
+        }
+
+        .converter-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        label {
+            font-weight: 500;
+            color: #51937b;
+            font-size: 1.05em;
+            font-family: Times New Roman;
+        }
+
+        input, select {
+            padding: 12px;
+            border: 2px dashed   #a6cec0f1;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #6b48ff;
+        }
+
+        .currency-select {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .swap-btn {
+            background: #6b48ff;
+            color: #4e2f2500;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .swap-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .result {
+            text-align: center;
+            font-size: 1.2em;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            
+            min-height: 60px;
+        }
+
+        .convert-btn {
+            background: linear-gradient(45deg, #6b48ff, #08aeea);
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .convert-btn:hover {
+            transform: translateY(-2px);
+        } 
+        
+        footer{
+          font-weight: 900;
+          
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .currency-select {
+                flex-direction: column;
+            }
+        }
